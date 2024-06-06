@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-06-06 12:25",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://debank-w.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://debank-w.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "yk7hyklcsk",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DeBank™ | Home Official Site",
+        "meta_descr": "The leading web3 portfolio tracker that supports the largest number of DeFi protocols and chains. intro. Connect as Web3 Natives. By web3 natives, for web3 ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://debank.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/debank.png\" alt=\"DeBank\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "ueTLqdbWH0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Demystifying <a href=\"https://debank.com/\" class=\"text-primary\">Debank</a>&nbsp;</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Exploring the Future of Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the realm of finance, traditional structures are being challenged by innovative technologies, paving the way for a decentralized future. Among these disruptive forces, one platform stands out: Debank. As the decentralized finance (DeFi) movement gains momentum, Debank emerges as a pivotal player, reshaping how we perceive and interact with financial services. In this article, we delve into the essence of Debank, its functionalities, and its implications for the future of finance.<br><br>Understanding Debank: An Overview<br>Debank is a decentralized finance platform built on blockchain technology, leveraging smart contracts to provide a wide array of financial services without the need for intermediaries. Unlike traditional banks, Debank operates on a peer-to-peer basis, enabling users to interact directly with each other in a trustless environment. This eliminates the need for intermediaries such as banks or brokerage firms, offering greater transparency, security, and efficiency.<br><br>Functionality and Features<br>At its core, Debank offers a plethora of financial services, ranging from lending and borrowing to trading and asset management. Let's explore some of its key functionalities:<br><br>Lending and Borrowing: Debank allows users to lend their assets to earn interest or borrow assets by providing collateral. This peer-to-peer lending model eliminates the need for a centralized intermediary, enabling users to access funds or earn passive income more efficiently.<br><br>Decentralized Exchanges (DEXs): Debank facilitates decentralized trading through DEXs, where users can exchange cryptocurrencies directly with each other. By removing the need for centralized exchanges, Debank enhances liquidity, reduces counterparty risk, and empowers users with greater control over their assets.<br><br>Asset Management: Through Debank, users can access various decentralized asset management services such as yield farming, staking, and liquidity mining. These services enable users to optimize their asset allocation and maximize their returns in a decentralized ecosystem.<br><br>Derivatives and Prediction Markets: Debank also supports decentralized derivatives trading and prediction markets, allowing users to hedge their risks or speculate on future events without relying on centralized intermediaries.<br><br>Governance and DAOs: Debank incorporates governance mechanisms and decentralized autonomous organizations (DAOs) to empower its community members in decision-making processes. Users can participate in governance proposals, vote on protocol changes, and contribute to the platform's development.<br><br>Advantages of Debank<br>The rise of Debank brings forth numerous advantages that revolutionize the traditional financial landscape:<br><br>Financial Inclusion: Debank enables access to financial services for individuals who are underserved or excluded by traditional banking systems. By leveraging blockchain technology, Debank provides an inclusive platform where anyone with an internet connection can participate in financial activities.<br><br>Transparency and Security: Built on blockchain technology, Debank ensures transparency and security by recording all transactions on a public ledger. This reduces the risk of fraud, manipulation, and censorship, fostering trust among users.<br><br>Cost Efficiency: Debank eliminates the need for intermediaries, such as banks or brokerage firms, reducing transaction costs and fees associated with traditional financial services. This cost efficiency benefits both users and service providers, enhancing overall profitability.<br><br>Global Accessibility: Debank operates on a global scale, transcending geographical boundaries and enabling seamless cross-border transactions. This global accessibility opens up new opportunities for collaboration, investment, and economic growth.<br><br>Decentralized Governance: By embracing decentralized governance, Debank empowers its community members to actively participate in decision-making processes. This democratic approach ensures that the platform evolves in alignment with the interests and values of its users.<br><br>Challenges and Considerations<br>Despite its numerous advantages, Debank faces several challenges and considerations on its path to widespread adoption:<br><br>Regulatory Uncertainty: The regulatory landscape surrounding decentralized finance remains uncertain and evolving. Debank must navigate regulatory challenges to ensure compliance while preserving its decentralized nature.<br><br>Security Risks: Although blockchain technology offers inherent security benefits, Debank is not immune to security risks such as smart contract vulnerabilities or hacking attacks. Continuous security audits and robust risk management practices are essential to mitigate these risks.<br><br>Scalability: As the popularity of Debank grows, scalability becomes a critical concern. Scalability solutions such as layer 2 protocols and sharding are being explored to address the increasing demand for Debank's services without compromising performance.<br><br>User Experience: Improving the user experience is paramount to driving mass adoption of Debank. Simplifying the onboarding process, enhancing platform usability, and providing user-friendly interfaces are key areas of focus for Debank's development.<br><br>The Future of Debank<br>As Debank continues to evolve, its impact on the future of finance is profound. By democratizing access to financial services, fostering transparency and security, and empowering individuals worldwide, Debank paves the way for a more inclusive, efficient, and equitable financial ecosystem.<br><br>In conclusion, Debank represents a paradigm shift in how we perceive and interact with finance. As decentralized finance continues to gain momentum, Debank stands at the forefront, spearheading innovation and driving the transformation of traditional financial systems. With its vast potential and disruptive capabilities, Debank heralds a new era of decentralized finance, where financial sovereignty and empowerment are within reach for all.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ueTLrcnmMV",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
